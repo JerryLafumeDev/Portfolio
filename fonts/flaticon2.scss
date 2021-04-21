@@ -1,0 +1,37 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?4301eece1ff6533b6d86afe1591acd2e") format("truetype"),
+url("./flaticon.woff?4301eece1ff6533b6d86afe1591acd2e") format("woff"),
+url("./flaticon.woff2?4301eece1ff6533b6d86afe1591acd2e") format("woff2"),
+url("./flaticon.eot?4301eece1ff6533b6d86afe1591acd2e#iefix") format("embedded-opentype"),
+url("./flaticon.svg?4301eece1ff6533b6d86afe1591acd2e#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "sketch": "\f101",
+    "technology": "\f102",
+    "vinyl": "\f103",
+);
+
+.flaticon-sketch:before {
+    content: map-get($flaticon-map, "sketch");
+}
+.flaticon-technology:before {
+    content: map-get($flaticon-map, "technology");
+}
+.flaticon-vinyl:before {
+    content: map-get($flaticon-map, "vinyl");
+}
