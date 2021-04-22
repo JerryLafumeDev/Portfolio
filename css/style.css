@@ -2743,7 +2743,7 @@ svg{
 
 .project-block .caption-box h4{
 	display: block;
-	font-size: 24px;
+	font-size: 21px;
 	line-height: 28px;
 	color: #bdb7ce;
 	font-weight: 500;
@@ -4130,7 +4130,20 @@ form .response .text-info{
 ====================================================================
 
 ***/
-
+.liveSite{
+	position: absolute;
+    color: white;
+    font-size: 15px;
+    margin: 7px 7px 7px 10px;
+    border: 2px solid #7c06e4;
+    padding: 0px 7px;
+    background: #7c06e4;
+}
+.liveSite:hover{
+	background: red;
+	border: 2px solid rgb(233, 104, 104);
+	color: white;
+}
 .main-footer{
 	position: relative;
 	display: block;
@@ -4140,7 +4153,7 @@ form .response .text-info{
 	display: none;
 }
 .logo-light{
-	max-width: 82%;
+	max-width: 15vw;
 }
 .main-footer .logo{
 	position: relative;
